@@ -1,3 +1,4 @@
+import os
 import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -7,8 +8,8 @@ import pandas as pd
 from ska_sdc.sdc2.sdc2_scorer import Sdc2Scorer
 
 # ==============================================================================
-PREDICTION_FILE = '/home/willy/sdc2/results/master_test_cat.txt'
-TRUTH_FILE = '/home/willy/sdc2/data/sky_dev_truthcat_v2.txt' 
+PREDICTION_FILE = os.environ.get('SDC2_PREDICTION_FILE', '/path/to/sdc2/results/master_test_cat.txt')
+TRUTH_FILE = os.environ.get('SDC2_TRUTH_FILE', '/path/to/sdc2/data/sky_dev_truthcat_v2.txt')
 # ==============================================================================
 
 def main():

@@ -1,4 +1,4 @@
-input.data = /home/willy/sdc2/data/sky_dev_v2.fits
+input.data = /path/to/sdc2/data/sky_dev_v2.fits
 
 pipeline.verbose = true
 
@@ -9,7 +9,7 @@ linker.enable = true
 
 parameter.enable = true
 
-output.directory = /home/willy/sdc2/results
+output.directory = /path/to/sdc2/results
 output.filename = dev_test
 
 output.writeCatASCII = true
