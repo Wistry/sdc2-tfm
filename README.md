@@ -54,7 +54,7 @@ sdc2/
 ├── notes/
 │   ├── experiments.md
 │   └── hifriends_strategy.md
-├── repos/                   # Clones de repositorios externos, necesarios descargarlos
+├── repos/                   # Repositorios externos gestionados como submódulos
 │   ├── hi-friends_analysis/
 │   ├── ska-sdc-2/
 │   └── SoFiA-2/
@@ -63,3 +63,20 @@ sdc2/
 │   └── master_test_logfile.log
 └── scripts/
     └── score_eval.py
+```
+
+---
+
+## 🔗 Repositorios externos
+
+Este proyecto utiliza repositorios externos gestionados como submódulos de Git:
+
+- SoFiA-2
+- HI-FRIENDS
+- SKA SDC2
+
+Para clonar el repositorio con todos los submódulos:
+
+```bash
+git clone --recurse-submodules https://github.com/Wistry/sdc2-tfm.git
+```

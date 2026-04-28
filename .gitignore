@@ -9,6 +9,7 @@ __pycache__/
 .venv/
 venv/
 env/
+.env
 
 # VSCode
 .vscode/
@@ -23,22 +24,29 @@ dist/
 *.log
 
 # Data files
-data/
-*.fits
-*.fit
-*.h5
-*.hdf5
-*.npy
-*.npz
+data/*.fits
+data/*.fit
+data/*.h5
+data/*.hdf5
+data/*.npy
+data/*.npz
 
 # Results / outputs
 results/
+!results/master_test_cat.txt
 outputs/
 tmp/
 
-# Repos
-repos/
+# External repos build/generated files
+repos/**/__pycache__/
+repos/**/*.o
+repos/**/*.so
+repos/**/build/
+repos/**/dist/
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# Private notes
+notes/own.md
