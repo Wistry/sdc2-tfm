@@ -17,6 +17,7 @@ env/
 # Agent / Codex local metadata
 .agents/
 .codex/
+demo/**/.matplotlib/
 
 # Build artifacts
 build/
@@ -54,3 +55,4 @@ Thumbs.db
 
 # Private notes
 notes/own.md
+AGENTS.mdrepos/SoFiA-2-src/
